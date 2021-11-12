@@ -1,7 +1,5 @@
 import { useState } from "react/cjs/react.development";
 
-
-
 export default function useCounter(initialState = 1){
 
     const [counter, setState] = useState(initialState)
@@ -11,6 +9,7 @@ export default function useCounter(initialState = 1){
         setState( counter +1 ) 
     }
     const decrement = () => {
+        
         setState( counter -1  )
     }
     const reset = () => setState(initialState) 
