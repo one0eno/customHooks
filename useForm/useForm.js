@@ -1,14 +1,9 @@
+export default function useForm(initialState = {}){
 
-import React, { useState } from "react";
-
-
-export default function useForm({initialState = {}}){
-
-    //const [formValues, setFormValues ] = useState(initialState)
     const [formValues, setFormValues ] = useState(initialState)
     const reset = () => {
       
-        setFormValues({description:''})
+        setFormValues(initialState)
     }
 
     const handleInputChange = ({target}) =>{
